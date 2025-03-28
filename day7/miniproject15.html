@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Flexbox Gallery</title> 
+  <style> 
+    body { 
+      margin: 0; 
+      background: bisque; 
+      padding: 20px; 
+    } 
+ 
+    .gallery { 
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 20px; 
+      justify-content: center; 
+    } 
+ 
+    .gallery img { 
+      width: 200px; 
+      height: 150px; 
+      border-radius: 10px; 
+      
+    } 
+ 
+    .gallery img:hover { 
+      transform: scale(1.1); 
+    } 
+  </style> 
+</head> 
+<body> 
+  <h1 style="text-align: center; margin-bottom: 20px;">Image Gallery</h1> 
+  <div class="gallery"> 
+    <img src=".\image1.jfif" alt="Image 1"> 
+    <img src=".\image2.jfif" alt="Image 2"> 
+    <img src=".\image3.jfif" alt="Image 3"> 
+    <img src=".\image4.jfif" alt="Image 4"> 
+    <img src=".\image5.jfif" alt="Image 5"> 
+    <img src=".\image6.jfif" alt="Image 5"> 
+  </div> 
+</body> 
+</html>
