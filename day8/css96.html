@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align self</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            height: 500px;
+            margin: auto;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .child1,
+        .child2,
+        .child3 {
+            border: 2px solid red;
+            width: 200px;
+
+        }
+
+        .child1 {
+            align-self: start;
+        }
+
+        .child2 {
+            align-self: center;
+        }
+
+        .child3 {
+            align-self: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child1">child 1</div>
+        <div class="child2">child 2</div>
+        <div class="child3">child 3</div>
+    </div>
+</body>

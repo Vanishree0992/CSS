@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product</title>
+    <style>
+        .container {
+            width: 900px;
+            height: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            border: 2px solid black;
+        }
+        .card1,
+        .card2,
+        .card3 {
+            flex-basis: 100px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px brown;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .card1 {
+            width: 250px;
+            height: 300px;
+            align-self: flex-start;
+        }
+
+        .card2 {
+            width: 250px;
+            height: 300px;
+            align-self: center;
+        }
+
+        .card3 {
+            width: 250px;
+            height: 300px;
+            align-self: flex-end;
+        }
+
+        .content {
+            padding: o;
+            text-align: center;
+        }
+
+        .button {
+            background-color: bisque;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card1">
+            <img src="image3.jfif" alt="Feature 1">
+            <div class="content">
+                <h2>Card 1</h2>
+                <p>This is card 1 in grid of cards.</p>
+                <button type="read">Read</button>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="image2.jfif" alt="Feature 2">
+            <div class="content">
+                <h3>Card 2</h3>
+                <p>This is card 2 in grid of cards.</p>
+                <button type="read">Read</button>
+            </div>
+        </div>
+        <div class="card3">
+            <img src="image1.jfif" alt="Feature 3">
+            <div class="content">
+                <h4>Card 3</h4>
+                <p>This is card 3 in grid of cards.</p>
+                <button type="read">Read</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

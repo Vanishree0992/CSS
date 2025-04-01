@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .layout {
+            flex-grow: 1;
+            background-color: gray;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px brown;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .layouttwice {
+            flex-grow: 2;
+            background-color: gray;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px brown;
+            margin: 5px;
+        }
+        .content {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="layout">
+
+            <div class="content">
+                <h3>Fast Performance</h3>
+                <p>Experience lightning-fast load times.</p>
+            </div>
+        </div>
+        <div class="layout">
+
+            <div class="content">
+                <h3>Secure Platform</h3>
+                <p>Enhanced security to protect your data.</p>
+            </div>
+
+        </div>
+
+        <div class="layouttwice">
+
+            <div class="content">
+                <h3>Easy Integration</h3>
+                <p>Seamless integration with your tools.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

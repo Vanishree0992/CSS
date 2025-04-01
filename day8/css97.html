@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding: 10px;
+            border: 2px solid #000;
+        }
+
+        .vertical {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            border: 2px solid #00f;
+        }
+
+        .child {
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="vertical">
+            <div class="child">child 1</div>
+            <div class="child">child 2</div>
+            <div class="child">child 3</div>
+        </div>
+        <div class="child">child 4</div>
+        <div class="child">child 5</div>
+    </div>
+</body>
+
+</html>

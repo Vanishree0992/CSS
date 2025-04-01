@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature section</title>
+    <style>
+        body { 
+            display: flex; 
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            margin: 0; 
+            background-color: white; 
+        } 
+        .container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+        } 
+        .feature {
+            flex-grow: 2; 
+            background-color: white; 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px brown; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            align-items: center;
+        } 
+        .img { 
+            width: 100%; 
+            border-bottom: 1px solid #ddd; 
+        } 
+ 
+        .content { 
+            padding: 10px; 
+            text-align: center; 
+        } 
+        .rate{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Our Products</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="feature">
+                <p>Featured product</p>
+                <img src="headphone.jpg">
+                <div class="content">
+                    <h3>Featured Headphones</h3>
+                    <p>High quality sound with noise cancellation</p>
+                    <p class="rate">$199</p>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Product 1</p>
+                <img src="earbuds.jpg">
+                <div class="content">
+                    <h3>Wireless Earbuds</h3>
+                    <p>Compact and powerful sound.</p>
+                    <p class="rate">$199</p>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Product 2</p>
+                <img src="smart watch.jpg">
+                <div class="content">
+                    <h3>Smart Watch</h3>
+                    <p>Track fitness and notifications.</p>
+                    <p class="rate">$199</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
