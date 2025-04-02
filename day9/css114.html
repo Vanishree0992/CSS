@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row heights</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 150px 500px 100px;
+            background-color: bisque;
+            color: black;
+            text-align: center;
+        }
+
+        .header,
+        .content,
+        .footer {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+            <p>This is my header</p>
+
+        </div>
+        <div class="content">
+            <h2>Content</h2>
+            <p>This is the content</p>
+            <p>Different row heights for header content and footer</p>
+
+        </div>
+        <div class="footer">
+            <p>@2025 All Rights Reserved</p>
+        </div>
+    </div>
+</body>

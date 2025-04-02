@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid of Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px black;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+
+        .card h3 {
+            margin: 15px 0;
+            font-size: 20px;
+        }
+
+
+        .card p {
+            color: #555;
+            font-size: 10px;
+        }
+
+
+        .card:hover {
+
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-grid">
+        <div class="card">
+            <img src="earbuds.jpg" alt="Card 1">
+            <h3>Earbuds</h3>
+            <p>which simply means that the two earpieces </p>
+        </div>
+        <div class="card">
+            <img src="headphone.jpg" alt="Card 2">
+            <h3>Head phone</h3>
+            <p>small loudspeaker drivers worn on or around the head </p>
+        </div>
+        <div class="card">
+            <img src="speaker.jpg" alt="Card 3">
+            <h3>Speaker</h3>
+            <p>converts electrical signals into sound waves, allowing you to hear audio from various devices </p>
+        </div>
+        <div class="card">
+            <img src="smart watch.jpg" alt="Card 4">
+            <h3>Smart watch</h3>
+            <p>the wrist that supports apps and acts as an extension of your mobile phone in some cases</p>
+        </div>
+        <div class="card">
+            <img src="bluetooth.jpg" alt="Card 5">
+            <h3>Bluetooth headset</h3>
+            <p>A headset that provides a two-way connection to the user's cellphone via Bluetooth.</p>
+        </div>
+        <div class="card">
+            <img src="mouse.jpg" alt="Card 6">
+            <h3>Wireless mouse</h3>
+            <p>A cordless mouse is a wireless input device that lets you interact with your computer</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

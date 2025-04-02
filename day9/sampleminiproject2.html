@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            align-items: center;
+            background-color: black;
+            color: white;
+            display: flex;
+            font-size: 40px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .head {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .rate {
+            color: green;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: green;
+            color: white;
+            padding: 8px;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: black;
+            height: 50px;
+            color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Pricing Table
+    </header>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h1 class="head">Basic</h1>
+            <p class="rate">$999/month</p>
+            <p> ✔ 10GB Storage</p>
+            <p> ✔ Email Support</p>
+            <p> ✘ Custom Domain</p>
+            <button type="Choose plan">Choose plan</button>
+        </div>
+        <div class="grid-item">
+            <h2 class="head">Standard</h2>
+            <p class="rate">$1999/month</p>
+            <p> ✔ 50GB Storage</p>
+            <p> ✔ Priority Support</p>
+            <p> ✘ Custom Domain</p>
+            <button type="Choose plan">Choose plan</button>
+        </div>
+        <div class="grid-item">
+            <h3 class="head">Premium</h3>
+            <p class="rate">$2999/month</p>
+            <p> ✔ Unlimited Storage</p>
+            <p> ✔ 24/7 Support</p>
+            <p> ✘ Custom Domain & Analytics</p>
+            <button type="Choose plan">Choose Plan</button>
+        </div>
+
+    </div>
+    <footer>
+        <p>@ 2025 Pricing Table All Rights Reserved</p>
+    </footer>
+</body>
