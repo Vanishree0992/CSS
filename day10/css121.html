@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        main {
+            background-color: aliceblue;
+        }
+
+        .article,
+        .sidebar {
+            background-color: beige;
+            color: black;
+            padding: 10px;
+
+        }
+        
+        body {
+            
+            display: grid;
+            height: 100vh;
+            gap: 20px;
+            grid-template-columns: 200px 200px auto;
+            grid-template-rows: 100px 300px;
+            grid-template-areas:
+                "head head head"
+                "main main side"
+            ;
+        }
+
+        header {
+            grid-area: head;
+        }
+
+        .article {
+            grid-area: main;
+        }
+
+        .sidebar {
+            grid-area: side;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MY Blog</h1>
+    </header>
+
+    <div class="article">
+       
+        
+    </div>
+    <div class="sidebar">
+        
+    </div>
+
+</body>

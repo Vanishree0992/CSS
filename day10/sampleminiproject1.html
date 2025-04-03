@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Layout</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        main {
+            background-color: aliceblue;
+        }
+
+        .article,
+        .sidebar {
+            background-color: beige;
+            color: black;
+            padding: 10px;
+
+        }
+
+        p,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-size: 15px;
+        }
+
+        .article1,
+        .article2, 
+        .article3 {
+            background-color: white;
+            padding-left: 10px;
+
+        }
+
+        body {
+            background-color: wheat;
+            display: grid;
+            height: 100vh;
+            gap: 20px;
+            grid-template-columns: 200px 200px auto;
+            grid-template-rows: 100px 300px;
+            grid-template-areas:
+                "head head head"
+                "main main side"
+            ;
+        }
+
+        header {
+            grid-area: head;
+        }
+
+        .article {
+            grid-area: main;
+        }
+
+        .sidebar {
+            grid-area: side;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MY Blog</h1>
+    </header>
+
+    <div class="article">
+        <div class="article1">
+            <h2>Article 1</h2>
+            <p>This is article 1</p>
+        </div>
+        <div class="article2">
+            <h3>Article 2</h3>
+            <p>This is article 2</p>
+        </div>
+        <div class="article3">
+            <h4>Article 3</h4>
+            <p>This is article 3</p>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h5>Sidebar</h5>
+        <p>Related content, categories or advertisements can go here</p>
+    </div>
+
+</body>
