@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial
+scale=1.0"> 
+    <title>Sticky Position Example</title> 
+    <style> 
+        *{ 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+        } 
+ 
+        header { 
+            background: #4caf50; 
+            color: white; 
+            text-align: center; 
+            padding: 10px 20px; 
+            position: sticky; 
+            top: 0;  
+            background: #333; 
+            color: white; 
+            padding: 10px 20px; 
+            
+        } 
+ 
+        
+ 
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin-right: 20px; 
+            font-weight: bold; 
+        } 
+ 
+        section { 
+            padding: 20px; 
+            height: 800px;         } 
+ 
+        section:nth-child(even) { 
+            background: #f4f4f4; 
+        } 
+ 
+        section:nth-child(odd) { 
+            background: #ddd; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <h1>Header</h1> 
+    </header> 
+     <section id="section1"> 
+        <h2>Section 1</h2> 
+       
+    </section> 
+    <section id="section2"> 
+        <h2>Section 2</h2> 
+        
+    </section> 
+    <section id="section3"> 
+        <h2>Section 3</h2> 
+       
+    </section> 
+    <section id="section4"> 
+        <h2>Section 4</h2> 
+        
+    </section> 
+</body> 
+</html> 

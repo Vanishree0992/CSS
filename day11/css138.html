@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal window</title>
+    <style>
+        
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            transform: translate(-50%, -50%);
+            width: 1000px;
+            height: 800px;
+            background-color: #007bff;
+          
+        }
+        .content {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 250px;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }  
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    
+    <div class="content">
+        <h2>Content</h2>
+        <p>This is a simple content on top of the background.</p>
+    </div>
+</body>
+</html>

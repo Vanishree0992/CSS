@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+        .highlightedtext {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .highlightedtext::after {
+            content: "Additional information";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: yellow;
+            color: black;
+            padding: 5px;
+            display: none;
+        }
+
+        .highlightedtext:hover::after {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="highlightedtext">
+        <h1>Highlighted Text</h1>
+
+    </div>
+</body>
