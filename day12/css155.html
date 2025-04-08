@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadein Image</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .container {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition-property: opacity;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+        }
+
+        .container:hover img {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="image1.jfif">
+    </div>
+
+</body>
+
+</html>

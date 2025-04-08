@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+        nav ul {
+            padding-top: 10px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;}
+            ul{
+            font-weight: bolder;
+            filter: blur(10px);
+            transition-property: filter;
+            transition-duration: 0.3s;
+            
+        }
+
+        ul:hover {
+            filter: none;
+        }
+
+        nav {
+            background-color: aquamarine;
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <nav>
+            <ul type="none">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>

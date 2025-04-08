@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading Text Carousel</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 100px;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            background-color: ghostwhite;
+            text-align: center;
+        }
+
+        .text {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+            opacity: 0;
+            animation-name: fadeText;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+
+
+        @keyframes fadeText {
+
+        100%{
+            opacity: 0;
+        }
+
+        0%{
+            opacity: 1;
+
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="text">Welcome to the Carousel!</div>
+
+    </div>
+
+</body>
+
+</html>
