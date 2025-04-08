@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .header {
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+        }
+
+        .Contact {
+            background-color: orangered;
+            border-radius: 20px;
+            color: aliceblue;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            padding-top: 10px;
+        }
+
+        .page1 {
+            padding-top: 50px;
+            padding-left: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: black;
+            color: white;
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .aside h2 {
+            font-size: 60px;
+
+        }
+
+        .aside p {
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        .ourservices {
+            width: 150px;
+            height: 60px;
+            border-radius: 25px;
+            background-color: orangered;
+            color: aliceblue;
+            font-size: medium;
+            margin-right: 30px;
+        }
+
+        .portfolio {
+            width: 150px;
+            height: 60px;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .page2 {
+            padding-top: 50px;
+            width: 100%;
+            height: 100%;
+            background-color: aliceblue;
+            color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap-reverse;
+
+        }
+
+        .about h3 {
+            font-size: xx-large;
+
+            font-weight: 800;
+        }
+
+        .about {
+            width: 50%;
+            margin: 10px;
+        }
+
+        .about p {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+        }
+
+        .aboutme {
+            font-size: 15px;
+            width: 130px;
+            height: 50px;
+            border: 2px solid red;
+            border-radius: 25px;
+        }
+
+        .page3 {
+            padding-top: 50px;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(189, 188, 188);
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        h4 {
+            font-size: 50px;
+        }
+
+        .certifications {
+            display: grid;
+            grid-template-columns: 24% 24% 24% 24%;
+            grid-template-rows: auto;
+            gap: 10px;
+            margin-left: 10px;
+        }
+
+        .gaap,
+        .aca,
+        .icaew,
+        .cia {
+            background-color: aliceblue;
+            box-shadow: 0 2px grey;
+            text-align: center;
+            flex-wrap: wrap;
+            border-radius: 9px;
+            padding: 10px;
+        }
+
+        .page3 p {
+            font-weight: lighter;
+        }
+
+        .foot {
+            color: rgb(103, 109, 109);
+            border-top: 1px solid rgb(153, 151, 151);
+            text-wrap: wrap;
+        }
+
+        .page4 {
+            padding-top: 50px;
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: row;
+            padding-top: 50px;
+            flex-wrap: wrap;
+
+        }
+
+        .book p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        .book h5 {
+            font-size: xx-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .contactme {
+            font-size: 15px;
+            width: 130px;
+            height: 50px;
+            border: 2px solid red;
+            border-radius: 25px;
+        }
+
+        .bookme {
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: 100px 50px 50px 200px;
+            grid-template-rows: 100px 100px 200px;
+        }
+
+        .bookme img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .grid5 {
+            grid-column: 1/4;
+            grid-row: 2/4;
+            border-radius: 20px;
+        }
+
+        .grid4 {
+            grid-row: 1/3;
+        }
+
+        .page5 {
+            padding-top: 50px;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .myservices {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .page5 h1 {
+            font-size: 60px;
+        }
+
+        .services h6 {
+            font-size: x-large;
+        }
+
+        .services p {
+            font-size: medium;
+            font-weight: lighter;
+        }
+
+        .page6 {
+            padding-top: 50px;
+            width: 100%;
+            height: 100vh;
+            background-color: aliceblue;
+            color: black;
+        }
+
+        .page6 h1 {
+            font-size: 60px;
+        }
+
+        .page6 p {
+            font-size: large;
+            font-weight: lighter
+        }
+
+        .slill1 {
+            position: absolute;
+            box-shadow: 0 1px 2px red;
+            border-radius: 10px;
+        }
+
+        .text1 {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            position: absolute;
+            top: 70%;
+            left: 60%;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src=".\assets\images\logo.png">
+            <a href="#page1">Home</a>
+            <a href="#page2">Blog</a>
+            <a href="#page3">pages</a>
+            <a href="#page4">Contact</a>
+            <button class="Contact">Contact</button>
+            <p>ƒ</p>
+            <p>🕊</p>
+            <p>[in]</p>
+        </div>
+    </header>
+    <main>
+        <div class="page1" id="page1">
+            <div class="aside">
+                <h2>Time for you to relax!</h2>
+                <p>Jessica will take care of things for you.</p>
+                <button class="ourservices">Our Services</button>
+                <button class="portfolio">Portfolio</button>
+            </div>
+            <div class="side">
+                <img src=".\assets\images\image-1.png">
+            </div>
+        </div>
+        <div class="page2" id="page2">
+            <div class="jessica">
+                <img src=".\assets\images\jessica.png">
+                <p>Hi, Jessica!</p>
+            </div>
+            <div class="about">
+                <h3>About Me</h3>
+                <p>I am Jessica and I am a professional accountat. I am a CPA with over 10 years of experience in a
+                    variety of topics, including but not limited to the technical with accounting, audit, finance (both
+                    personal and for the business).</p>
+                <button class="aboutme">About Me</button>
+            </div>
+
+        </div>
+        <div class="page3" id="page3">
+            <h4>My Certifications</h4>
+            <div class="certifications">
+                <div class="gaap">
+                    <h1>GAAP</h1>
+                    <p>Generally Accepted Accounting Principles.</p>
+                    <div class="foot">
+                        <p>🗓 Graduated January,2015</p>
+                    </div>
+                </div>
+                <div class="aca">
+                    <h1>ACA</h1>
+                    <p>Associate Charted Accounted.</p>
+                    <div class="foot">
+                        <p>🗓 Graduated July,2016</p>
+                    </div>
+                </div>
+                <div class="icaew">
+                    <h1>ICAEW</h1>
+                    <p>Certification in Finance Accounting and Business.</p>
+                    <div class="foot">
+                        <p>🗓 Graduated March,2015</p>
+                    </div>
+                </div>
+                <div class="cia">
+                    <h1>CIA</h1>
+                    <p>Certified Internal Auditor.</p>
+                    <div class="foot">
+                        <p>🗓 Graduated October,2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page4" id="page4">
+            <div class="book">
+                <h5>Time to book Me !</h5>
+                <p>Book a call with me and forget all the hassle that
+                    comes with paper work. I will do it for you!</p>
+                <button class="contactme">Contact Me</button>
+            </div>
+            <div class="bookme">
+                <div class="grid1"></div>
+                <div class="grid2"></div>
+                <div class="grid3">
+                    <img src=".\assets\images\book-4.jpg">
+                </div>
+                <div class="grid4"> <img src=".\assets\images\book-2.jpg"></div>
+                <div class="grid5"> <img src=".\assets\images\book-1.jpg"></div>
+                <div class="grid6"> <img src=".\assets\images\book-3.jpg"></div>
+
+            </div>
+        </div>
+        <div class="page5" id="page5">
+            <h1>My Services</h1>
+            <div class="myservices">
+                <div class="services">
+                    <div class="service1">
+                        <h6><a href=""></a>Book Keeping</h6>
+                        <p>Being good with numbers is the most important part.
+                        </p>
+                    </div>
+                    <div class="service2">
+                        <h6><a href=""></a>Business Analysis</h6>
+                        <p>Gain Expertise in Analytics & Master Implement.
+                        </p>
+                    </div>
+                    <div class="service3">
+                        <h6><a href=""></a>Tax Preparation</h6>
+                        <p>Process of preparing the tax returns, often returns.
+                        </p>
+                    </div>
+                    <div class="service4">
+                        <h6><a href=""></a>Quickbooks Setup</h6>
+                        <p>Time-saving tools you need to grow your business.
+                        </p>
+                    </div>
+                </div>
+                <div class="serviceimg">
+                    <img src=".\assets\images\jessica.png">
+                </div>
+            </div>
+        </div>
+        <div class="page6" id="page6">
+            <h1>Software Skills</h1>
+            <p>I am a professional in several areas and I am proud of my
+                skills in the following:</p>
+            <div class="Skills">
+                <div class="slill1">
+                    <img src=".\assets\images\software-1.jpg">
+                    <div class="text1">
+                        <p><b>Zoho Books</b></p>
+                    </div>
+                
+           </div>
+        </div>
+        </div>
+        
+    </main>
+</body>
+
+</html>
