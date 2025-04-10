@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Breakpoints</title>
+    <style>
+        .container {
+            background-color: mediumaquamarine;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+        @media (max-width:600px) {
+
+           .container h1,
+            h2 {
+                font-size: 20px;
+            }
+
+           .container p {
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width:601px) and (max-width:1024px) {
+
+           .container h1,
+            h2 {
+                font-size: 30px;
+            }
+
+           .container p {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width:1024px) {
+
+          .container  h1,
+            h2 {
+                font-size: 40px;
+            }
+
+          .container  p {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">   
+            <h1>This is a Simple webpage</h1>
+            <h2>The Font size changes</h2>
+            <p>Small for mobile</p>
+            <p>Large for Tablet</p>
+            <p>Larger for Desktop</p>
+       
+        </div>
+    <footer>
+        <p>@2025 Copt Rights Reserved</p>
+    </footer>
+</body>
