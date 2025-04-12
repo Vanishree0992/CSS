@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+            filter: grayscale(90%);
+        }
+
+        .productinfo {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .productname {
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        .price {
+            font-size: 20px;
+            color: #e60023;
+            font-weight: bold;
+        }
+
+        .add {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .add:hover {
+            background-color: powderblue;
+            color: black;
+            transform: scale(1.2);
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .detail {
+            background: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="image-gallery">
+            <img src="watch.jpg">
+            <img src="watch1.jpg">
+            <img src="watch2.jpg">
+        </div>
+
+        <div class="productinfo">
+            <div class="productname">Smart Watch</div>
+
+            <div class="price">
+                <p><del style="color: grey;">$ 5,000 </del> $2,500 <em
+                        style="color: #28a745;font-size: 15px;">50%off</em></p>
+            </div>
+            <div class="ratings">
+                <p>★★★★☆ Ratings</p>
+            </div>
+
+            <button class="add">Add to Cart</button>
+
+            <div class="product">
+                <div class="detail">CM Super Amoled Display</div>
+                <div class="detail">AI Voice Assistant</div>
+                <div class="detail">Multiple Menu Styles with black Strap</div>
+                <div class="detail">1 Year Warrenty</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Delicious Pasta Recipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+
+        }
+
+        .container img {
+            width: 100%;
+            height: 50%;
+            display: block;
+        }
+
+        .text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px 40px;
+            border-radius: 10px;
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ff914d;
+            padding-bottom: 5px;
+            color: #333;
+        }
+
+        ul.ingredients {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        ol.instructions {
+            padding-left: 20px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff914d;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-to-top:hover {
+            background-color: #e67330;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: antiquewhite;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="pasta.jpg" alt="Delicious Pasta">
+        <div class="text">Creamy Garlic Pasta</div>
+
+
+        <div class="content">
+            <section>
+                <h2>Ingredients</h2>
+                <ul class="ingredients">
+                    <li>200g spaghetti</li>
+                    <li>2 tbsp olive oil</li>
+                    <li>4 cloves garlic, minced</li>
+                    <li>1 cup heavy cream</li>
+                    <li>½ cup grated parmesan</li>
+                    <li>Salt & pepper to taste</li>
+                    <li>Fresh parsley (optional)</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Instructions</h2>
+                <ol class="instructions">
+                    <li>Boil spaghetti in salted water until al dente. Drain and set aside.</li>
+                    <li>Heat olive oil in a pan and sauté garlic for 1-2 minutes.</li>
+                    <li>Add heavy cream, bring to a simmer, and cook for 5 minutes.</li>
+                    <li>Stir in parmesan, salt, and pepper.</li>
+                    <li>Add cooked pasta and toss to coat evenly.</li>
+                    <li>Garnish with chopped parsley and serve warm.</li>
+                </ol>
+            </section>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+            Back to Top
+        </button>
+        <footer>
+            <p>@2025 Copy Rights Food Recipe</p>
+        </footer>
+    </div>
+</body>
+
+</html>
