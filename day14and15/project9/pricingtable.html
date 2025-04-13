@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing Plans</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: #f4f4f4;
+    }
+
+    .pricing-section {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .plan {
+      flex: 1 1 30%;
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .plan:hover {
+      transform: translateY(-10px);
+    }
+
+    .plan.best {
+      border: 3px solid #007bff;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0,123,255, 0.5); }
+      70% { box-shadow: 0 0 0 10px rgba(0,123,255, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0,123,255, 0); }
+    }
+
+    .plan h2 {
+      box-shadow: 2px 2px rgb(155, 205, 3);
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 2rem;
+      margin: 20px 0;
+      color: #007bff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      transition: color 0.3s ease;
+    }
+
+    ul li:hover {
+      color: #007bff;
+    }
+
+    .btn {
+      
+      padding: 10px 25px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 700px) {
+      .pricing-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .plan {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pricing-section">
+  
+    <div class="plan">
+      <h2>Basic</h2>
+      <p class="price">$499/mo</p>
+      <ul>
+        <li>1 Project</li>
+        <li>100MB Storage</li>
+        <li>Email Support</li>
+      </ul>
+      <a href="#" class="btn">Choose Plan</a>
+    </div>
+
+    <div class="plan best">
+      <h2>Pro</h2>
+      <p class="price">$1029/mo</p>
+      <ul>
+        <li>10 Projects</li>
+        <li>10GB Storage</li>
+        <li>Priority Support</li>
+      </ul>
+      <a href="#" class="btn">Choose Plan</a>
+    </div>
+
+   
+    <div class="plan">
+      <h2>Enterprise</h2>
+      <p class="price">$1599/mo</p>
+      <ul>
+        <li>Unlimited Projects</li>
+        <li>100GB Storage</li>
+        <li>Dedicated Manager</li>
+      </ul>
+      <a href="#" class="btn">Choose Plan</a>
+    </div>
+  </div>
+
+</body>
+</html>

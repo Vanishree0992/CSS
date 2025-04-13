@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        .hero {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h4 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: auto;
+        }
+
+
+        .courses {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #2575fc;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+        }
+
+
+        .faq {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .details {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: medium;
+            color: #2575fc;
+            list-style: none;
+            position: relative;
+            padding-right: 25px;
+        }
+
+        h1::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            font-size: 1.2rem;
+            transition: transform 0.2s ease;
+        }
+
+        .details h1::after {
+            transform: rotate(45deg);
+        }
+
+        .details p {
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h4 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <h4>Master Web Development</h4>
+        <p>Join our best-selling course and build real-world websites and applications using HTML, CSS, JavaScript, and
+            more!</p>
+    </section>
+
+
+    <section class="courses">
+        <div class="card">
+            <h3>Beginner to Pro</h3>
+            <p>Perfect for newcomers! Start with basics and grow your skills step-by-step.</p>
+        </div>
+        <div class="card">
+            <h3>Real Projects</h3>
+            <p>Learn by doing! Build multiple websites and full-stack projects throughout the course.</p>
+        </div>
+        <div class="card">
+            <h3>Lifetime Access</h3>
+            <p>Once enrolled, you get lifetime access to all course content and future updates.</p>
+        </div>
+        <div class="card">
+            <h3>Certificate</h3>
+            <p>Get a certificate of completion to add to your resume and showcase your skills.</p>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="details">
+            <h1>Do I need prior experience?</h1>
+            <p>No prior coding experience is required. We start from scratch!</p>
+        </div>
+
+        <div class="details">
+            <h1>How long will the course take?</h1>
+            <p>It’s self-paced. Most students finish in 4–8 weeks depending on their schedule.</p>
+        </div>
+
+        <div class="details">
+            <h1>What if I need help during the course?</h1>
+            <p>You’ll have access to Q&A support and community forums for any questions.</p>
+        </div>
+
+        <div class="details">
+            <h1>Is there a refund policy?</h1>
+            <p>Yes, we offer a 14-day money-back guarantee if you’re not satisfied.</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
